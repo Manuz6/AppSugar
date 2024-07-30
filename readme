@@ -1,0 +1,13 @@
+Este Proyecto se basa en el sitio web de una Cafetería
+
+Al momento de la entrega cuenta con distintas paginas para su navegaciòn mediante botones para conocer la historia y lo que ofrece dicho local a sus clientes.
+Contamos con distintos formularios (reservas,registro de clientes y pedidos que pueden ser encargados para pasar a recoger)
+Ademas contamos con un formluario de busqueda para poder visualizar los clientes ya registrados en nuestra base de datos y que puedan ingresar a hacer sus pedidos mediante un login(aun no implementado)
+
+En las distantas urls podemos encontrar:
+Index: Nuestro sitio web de inicio y presentacion del local
+Nosotros: Un breve desarrollo sobre la historia del negocio
+Productos: Una introducciòn a los productos que podremos encontrar en el local
+Tienda: En la cual tenemos datos sobre los horarios y direcciòn
+Reservas: Una herencia de la pagina de inicio con un boton de acciòn hacia el formulario de reservas
+
