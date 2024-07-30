@@ -1,0 +1,15 @@
+{% extends 'AppSugar/index.html' %}
+
+{% load static %}
+
+{% block title %} Clientes {% endblock title %}
+
+{% block main %}
+
+
+{% for Cliente in Cliente_Busqueda %}
+    <li>Nombre: {{ Cliente.nombre }} | Apellido: {{ Cliente.apellido }} | Email: {{ Cliente.email }}</li>
+{% endfor %}
+
+
+{% endblock main %}

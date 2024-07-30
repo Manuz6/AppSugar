@@ -1,0 +1,16 @@
+{% extends 'AppSugar/index.html' %}
+
+{% load static %}
+
+{% block title %} Buscar Cliente {% endblock title %}
+
+{% block main %}
+    <form action="/AppSugar/buscar_clientes" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ mi_cliente.as_table }}
+        </table>
+        <input type="submit" value="Enviar">
+
+    </form>
+{% endblock main %}

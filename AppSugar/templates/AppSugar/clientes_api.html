@@ -1,0 +1,18 @@
+{% extends 'AppSugar/index.html' %}
+
+{% load static %}
+
+{% block title %} Formulario Clientes con API {% endblock title %}
+
+{% block main %}
+    
+    <form action="AppSugar/clientes_api" method="POST">
+        {% csrf_token %}
+        
+        <table>
+            {{ Nuevo_Cliente.as_table }}
+        </table>
+        <input type="submit" value="Enviar">
+
+    </form>
+{% endblock main %}

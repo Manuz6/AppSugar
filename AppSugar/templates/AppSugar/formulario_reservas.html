@@ -1,0 +1,22 @@
+{% extends 'AppSugar/index.html' %}
+
+{% load static %}
+
+{% block title%} Formulario Reservas {% endblock title %}
+
+{% block main %}
+
+    <form action="AppSugar/formulario_reserva/" method="POST">
+        {% csrf_token %}
+        <br><br><p style="color: whitesmoke;">Nombre: <input type="text" name="nombre"><p>
+        <p style="color: whitesmoke;">Apellido: <input type="text" name="apellido"><p>
+        <p style="color: whitesmoke;">Horario: <input type="text" name="reserva"><p>
+        <p style="color: whitesmoke;">Mesa: <input type="text" name="mesa"><p>
+        
+        <input type ="submit" value="Enviar">
+
+    </form>
+{% endblock main %}
+
+
+        
